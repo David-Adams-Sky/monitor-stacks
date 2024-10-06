@@ -1,0 +1,79 @@
+@media print {
+  @page {
+    size: A3;
+  }
+} 
+ 
+ body {
+      font-family: Arial;
+    }
+
+    /* Style the table */
+    .monstack {
+      border: 0px solid black;
+      border-collapse: collapse;
+      background-color: rgb(255, 91, 91);
+    }
+
+    /* Style the multiviewer table */
+    .table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 450px;
+      text-align: center;
+      background-color: #ccc;
+      margin: 0px;
+    }
+
+    /* Style the textbox */
+    .textbox {
+      width: 90%;
+      font-size: 14pt;
+      text-align: center;
+    }
+
+    /* Style the tab */
+    .tab {
+      position: static;
+      overflow: hidden;
+      border: 0px solid #ccc;
+      background-color: #cbcbfc;
+      width: 450px;
+      margin: 0px;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px 10px;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #adadfd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #7b7bff;
+    }
+
+    /* Style the monitor content */
+    .moncontent {
+      padding: 0px 0px;
+      position: static;
+      border: 0px solid #000;
+      border-top: none;
+      width: 450px;
+      height: 240px;
+      background-color: #333;
+      margin: 0px;
+    }
