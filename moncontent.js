@@ -1,6 +1,23 @@
+//  HTML code for the buttons on the HTML layout pages
+//  <button class="tablinks" onclick="loadLayout(event, 'A', 'Mon1')">Full</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'C', 'Mon1')">4-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'F', 'Mon1')">9-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'G', 'Mon1')">12-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'H', 'Mon1')">16-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'P', 'Mon1')">10-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'Q', 'Mon1')">5-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'R', 'Mon1')">6-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'S', 'Mon1')">9-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'V', 'Mon1')">7-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'X', 'Mon1')">13-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'Y', 'Mon1')">13-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'EE', 'Mon1')">7-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'GG', 'Mon1')">10-way</button>
+//  <button class="tablinks" onclick="loadLayout(event, 'OO', 'Mon1')">30-way</button>
+
+// Get the element with id="defaultOpen" and click on it. Displays the default layout on page load.
 function openDefaults() {
     'use strict';
-    // Get the element with id="defaultOpen" and click on it
     let mon = "";
         for (let i = 1; i < 11; i += 1) {
         mon = "defaultOpen" + i;
@@ -8,7 +25,8 @@ function openDefaults() {
     }
 }
 
-function openCity(evt, cityName, mon) {
+//On layout click, the function "loadLayout" is called with the variables evt, layoutName and mon.
+function loadLayout(evt, layoutName, mon) {
     'use strict';
     var i, tabcontent, tablinks;
     
@@ -25,7 +43,9 @@ function openCity(evt, cityName, mon) {
     //document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
     
-    switch (cityName) {
+    
+    //Change layout to monitor based on layout requested. "Case" is a layout parsed, "mon" is the monitor ID parsed
+    switch (layoutName) {
     case "A": // Full
         document.getElementById(mon).innerHTML = '<table class="table"><tr style="height: 240px"><td><input type="text" class="textbox"></td></tr></table>';
         break;
