@@ -15,6 +15,8 @@
 //  <button class="tablinks" onclick="openCity(event, 'EE', 'Mon1')">7-way</button>
 //  <button class="tablinks" onclick="openCity(event, 'GG', 'Mon1')">10-way</button>
 //  <button class="tablinks" onclick="openCity(event, 'OO', 'Mon1')">30-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'xxx1', 'Mon2')">6-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'xxx2', 'Mon2')">6-way</button>
 
 // Get the element with id="defaultOpen" and click on it. Displays the default layout on page load.
 function openDefaults() {
