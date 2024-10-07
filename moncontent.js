@@ -48,16 +48,16 @@ function openCity(evt, layoutName, mon) {
     //Change layout to monitor based on layout requested. "Case" is a layout parsed, "mon" is the monitor ID parsed
     switch (layoutName) {
     case "A": // Full
-        document.getElementById(mon).innerHTML = '<table class="table"><tr style="height: 240px"><td><input type="text" class="textbox"></td></tr></table>';
+        document.getElementById(mon).innerHTML = '<table class="table"> <tr style="height: 240px"><td><input type="text" class="textbox"></td></tr></table>';
         break;
     case "C": // 4-way
-        document.getElementById(mon).innerHTML = '<table class="table"><tr style="height: 120px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td> </tr><tr style="height: 120px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
+        document.getElementById(mon).innerHTML = '<table class="table"> <tr style="height: 120px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td> </tr><tr style="height: 120px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
         break;
     case "E": // 8-way
-        document.getElementById(mon).innerHTML = '<table class="table"><tr style="height: 80px"><td></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
+        document.getElementById(mon).innerHTML = '<table class="table"> <tr style="height: 80px"><td></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
         break;
     case "F": // 9-way
-        document.getElementById(mon).innerHTML = '<table class="table"><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
+        document.getElementById(mon).innerHTML = '<table class="table"> <tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
         break;
     case "G": // 12-way
         document.getElementById(mon).innerHTML = '<table class="table"> <tr style="height: 60px"> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> </tr> <tr style="height: 60px"> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> </tr> <tr style="height: 60px"> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> <td><input type="text" class="textbox"></td> </tr> <tr style="height: 60px"> <td colspan="4"></td> </tr> </table>';
@@ -112,10 +112,10 @@ function openCity(evt, layoutName, mon) {
         break;
             
     case "xxx1": // 1+5 way - Special Producer 1 Layout
-        document.getElementById(mon).innerHTML = '<table class="table"><tr style="height: 80px"><td colspan="2" rowspan="2"><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
+        document.getElementById(mon).innerHTML = '<table class="table"> <tr style="height: 80px"><td colspan="2" rowspan="2"><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
        break;        
     case "xxx2": // 1+5 way - Special Producer 1 Layout
-        document.getElementById(mon).innerHTML = '<table class="table"><tr style="height: 80px"><td><input type="text" class="textbox"></td><td colspan="2" rowspan="2"><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
+        document.getElementById(mon).innerHTML = '<table class="table"> <tr style="height: 80px"><td><input type="text" class="textbox"></td><td colspan="2" rowspan="2"><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td></tr><tr style="height: 80px"><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td><td><input type="text" class="textbox"></td></tr></table>';
        break;      
     }
 }
