@@ -1,19 +1,19 @@
 //  HTML code for the buttons on the HTML layout pages
-//  <button class="tablinks" onclick="loadLayout(event, 'A', 'Mon1')">Full</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'C', 'Mon1')">4-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'F', 'Mon1')">9-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'G', 'Mon1')">12-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'H', 'Mon1')">16-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'P', 'Mon1')">10-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'Q', 'Mon1')">5-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'R', 'Mon1')">6-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'S', 'Mon1')">9-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'V', 'Mon1')">7-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'X', 'Mon1')">13-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'Y', 'Mon1')">13-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'EE', 'Mon1')">7-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'GG', 'Mon1')">10-way</button>
-//  <button class="tablinks" onclick="loadLayout(event, 'OO', 'Mon1')">30-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'A', 'Mon1')">Full</button>
+//  <button class="tablinks" onclick="openCity(event, 'C', 'Mon1')">4-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'F', 'Mon1')">9-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'G', 'Mon1')">12-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'H', 'Mon1')">16-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'P', 'Mon1')">10-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'Q', 'Mon1')">5-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'R', 'Mon1')">6-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'S', 'Mon1')">9-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'V', 'Mon1')">7-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'X', 'Mon1')">13-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'Y', 'Mon1')">13-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'EE', 'Mon1')">7-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'GG', 'Mon1')">10-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'OO', 'Mon1')">30-way</button>
 
 // Get the element with id="defaultOpen" and click on it. Displays the default layout on page load.
 function openDefaults() {
@@ -25,8 +25,8 @@ function openDefaults() {
     }
 }
 
-//On layout click, the function "loadLayout" is called with the variables evt, layoutName and mon.
-function loadLayout(evt, layoutName, mon) {
+//On layout click, the function "openCity" is called with the variables evt, layoutName and mon.
+function openCity(evt, layoutName, mon) {
     'use strict';
     var i, tabcontent, tablinks;
     
