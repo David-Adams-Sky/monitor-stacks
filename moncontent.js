@@ -5,6 +5,7 @@
 //  <button class="tablinks" onclick="openCity(event, 'F', 'Mon1')">9-way</button>
 //  <button class="tablinks" onclick="openCity(event, 'G', 'Mon1')">12-way</button>
 //  <button class="tablinks" onclick="openCity(event, 'H', 'Mon1')">16-way</button>
+//  <button class="tablinks" onclick="openCity(event, 'K', 'Mon1')">25-way</button>
 //  <button class="tablinks" onclick="openCity(event, 'P', 'Mon1')">10-way</button>
 //  <button class="tablinks" onclick="openCity(event, 'Q', 'Mon1')">5-way</button>
 //  <button class="tablinks" onclick="openCity(event, 'R', 'Mon1')">6-way</button>
